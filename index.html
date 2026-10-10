@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7f6f2" />
+  <title>创建账户 · 声桥 SpeakLoop</title>
+  
+  <link rel="stylesheet" href="assets/css/index.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="form-side" aria-label="注册表单">
+      <a class="brand" href="#" aria-label="声桥首页">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 10v4m4-8v12m4-15v18m4-13v8m4-11v14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+        <span>声桥 <span style="font-weight:500;color:#71817b">SpeakLoop</span></span>
+      </a>
+
+      <div class="form-wrap">
+        <div class="eyebrow">从开口开始</div>
+        <h1>创建你的账户</h1>
+        <p class="intro">给自己一点练习时间，让每一次开口<br class="desktop-break" />都离流利更近一步。</p>
+
+        <form id="signup-form">
+          <div class="field" id="name-field">
+            <div class="field-head"><label for="name">怎么称呼你</label><span class="optional">必填</span></div>
+            <div class="input-wrap"><input id="name" name="name" type="text" autocomplete="name" placeholder="你的名字或昵称" required /></div>
+          </div>
+          <div class="field">
+            <div class="field-head"><label for="email">电子邮箱</label></div>
+            <div class="input-wrap"><input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required /></div>
+          </div>
+          <div class="field">
+            <div class="field-head"><label for="password">设置密码</label></div>
+            <div class="input-wrap has-action">
+              <input id="password" name="password" type="password" autocomplete="new-password" placeholder="至少 8 位字符" minlength="8" required />
+              <button class="icon-button" type="button" id="toggle-password" aria-label="显示密码" title="显示密码"><svg viewBox="0 0 24 24" fill="none"><path d="M2.8 12s3.2-6 9.2-6 9.2 6 9.2 6-3.2 6-9.2 6-9.2-6-9.2-6Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="2.6" stroke="currentColor" stroke-width="1.6"/></svg></button>
+            </div>
+          </div>
+          <div class="language-field" id="language-field">
+            <div class="field-head"><span class="group-label">想练习的语言</span><span class="optional">可多选</span></div>
+            <div class="language-options">
+              <label class="language-chip"><input type="checkbox" name="language" value="英语" checked /><span><b>EN</b> 英语</span></label>
+              <label class="language-chip"><input type="checkbox" name="language" value="日语" /><span><b>JP</b> 日语</span></label>
+              <label class="language-chip"><input type="checkbox" name="language" value="中文" /><span><b>中</b> 中文</span></label>
+            </div>
+          </div>
+          <label class="terms" id="terms-row"><input type="checkbox" id="terms" required /><span>我已阅读并同意<a href="#">《服务条款》</a>和<a href="#">《隐私政策》</a></span></label>
+          <button class="submit" type="submit">创建账户 <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h13m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="notice" id="notice" role="status"></div>
+        </form>
+        <p class="login" id="mode-toggle">已经有账户？<a href="#login">登录</a></p>
+      </div>
+      <div class="footer"><span>© 2026 声桥 SpeakLoop</span><span>让表达，自然发生。</span></div>
+    </section>
+
+    <aside class="visual-side" aria-label="产品介绍">
+      <div class="visual-content">
+        <div class="visual-kicker">Speak a little, every day</div>
+        <h2>把想说的话，<br /><em>自在地说出来。</em></h2>
+        <p class="visual-copy">从真实生活场景开始练习。慢慢来，也能把每一句话说得更自然。</p>
+        <div class="scene">
+          <div class="scene-top"><span>今日练习 · 咖啡店点单</span><span class="live">对话中</span></div>
+          <div class="conversation">
+            <div class="bubble"><span class="speaker">AI · 店员</span>Hi! What can I get for you today?</div>
+            <div class="bubble user"><span class="speaker">你</span>Could I have a latte, please?</div>
+            <div class="bubble"><span class="speaker">AI · 店员</span>Of course. What size would you like?</div>
+          </div>
+          <div class="audio-row"><span class="mic"><svg viewBox="0 0 24 24" fill="none"><rect x="9" y="3" width="6" height="12" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3m-3 0h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="timer">00:08</span></div>
+          <div class="floating-note"><span class="note-icon">✦</span><span><strong>表达很自然</strong>试试把语气再放松一点</span></div>
+        </div>
+        <div class="bottom-quote"><span>“</span> 练习不用完美，开口就已经很好了。</div>
+      </div>
+    </aside>
+  </main>
+  
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+</html>
+

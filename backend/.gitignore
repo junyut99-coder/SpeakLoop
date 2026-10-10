@@ -1,0 +1,11 @@
+.venv/
+.venv*/
+.local/
+__pycache__/
+*.py[cod]
+.env
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+media/**
+!media/.gitkeep
